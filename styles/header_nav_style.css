@@ -1,0 +1,52 @@
+header {
+		height: 55px;
+}
+#title-site {
+	float: right;
+	margin-right: 200px;
+
+}
+
+#title-site p {
+		font-size: 36px;
+		color: #030000;
+		margin-top: 10px;
+		margin-left: 30px;
+		margin-bottom: 0px;
+		
+}
+
+nav {
+		width: all;
+    height: 43px;
+    claer: both;
+    background: #A9A9A9;
+}
+
+nav ul li {
+    height: 35px;
+    float: left;
+    position: relative;
+    list-style-type: none;
+}
+
+nav ul li a {
+		font-weight: bold;
+		font-size: 30px;
+    line-height: 14px;
+    color: #000000;
+    display: block;
+    padding: 14px 28px;
+    text-decoration: none;
+}
+
+nav ul li:first-child a {
+    padding-left: 29px;
+}
+
+nav ul li a:hover {
+		background-color: #B8B5B5;
+    color: #000000;
+}
+
+

@@ -1,0 +1,13 @@
+.textarea {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.textarea p {
+	padding-right: 10px;
+}
+
+textarea {
+	resize: none;
+}
