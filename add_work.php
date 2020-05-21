@@ -5,7 +5,7 @@
 	<title>Добавление работы</title>
 	<?php 
         include('connect_db.php');
-  ?> 
+    ?> 
   <link rel="stylesheet" href="styles/header_nav_style.css">
   <link rel="stylesheet" href="styles/article_style.css">
   <link rel="stylesheet" href="styles/add_ctyle.css">
@@ -13,12 +13,12 @@
 <body>
 	<?php 
         include('header.html');
-  ?>
+    ?>
 	
 	<article>
 			<form action="action.php" method="post">
  				<p>Введите класс: <input type="text" name="class" /></p>
- 				<p>Введите номер работы: <input type="text" name="name" /></p>
+ 				<p>Введите название работы: <input type="text" name="name" /></p>
  				<p>Введите дату: <input type="date" name="date" /></p>
  				<div class="textarea">
  					<p >Описание:</p>

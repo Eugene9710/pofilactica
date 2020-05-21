@@ -7,6 +7,7 @@
     );
     
     $log_charset = array("Изначальная кодировка: " . $conn->character_set_name());
+      
     if (!$conn->set_charset("utf8")) {
         printf("Ошибка при загрузке набора символов utf8: %s\n", $conn->error);
         exit();

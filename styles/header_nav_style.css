@@ -7,17 +7,17 @@ header {
 
 }
 
-#title-site p {
+#title-site p a{
 		font-size: 36px;
 		color: #030000;
 		margin-top: 10px;
 		margin-left: 30px;
 		margin-bottom: 0px;
-		
+		text-decoration: none;
 }
 
 nav {
-		width: all;
+	width: all;
     height: 43px;
     claer: both;
     background: #A9A9A9;
@@ -45,7 +45,7 @@ nav ul li:first-child a {
 }
 
 nav ul li a:hover {
-		background-color: #B8B5B5;
+	background-color: #B8B5B5;
     color: #000000;
 }
 
