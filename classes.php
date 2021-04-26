@@ -23,13 +23,14 @@
         while($rec = mysqli_fetch_assoc($result)) {
     ?>   
      
-    <div class="last-work">
+    <a href="class.php?class=<?php echo($rec['NomerClass']) ?> ">
+      <div class="last-work">
         <p class="class"><?php echo($rec['NomerClass']) ?></p>    
         <p class="name"><?php echo($rec['Whiteboard']) ?></p>
         <p class="desc"><?php echo($rec['Screen']) ?></p>
         <p class="data"><?php echo($rec['TV']) ?></p><hr>
-        
-    </div>
+      </div>
+    </a>
     <?php
     }
     ?>  
