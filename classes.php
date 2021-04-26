@@ -14,6 +14,25 @@
         include('header.html');
   ?>
 
+  <article class="clearfix">
+  <h2>Последние работы</h2>
+    <br>
+    <?php 
+        $result = mysqli_query($conn, "SELECT `NomerClass`, `Whiteboard`,`Screen`,`TV` FROM `classrooms`;"); 
+         
+        while($rec = mysqli_fetch_assoc($result)) {
+    ?>   
+     
+    <div class="last-work">
+        <p class="class"><?php echo($rec['NomerClass']) ?></p>    
+        <p class="name"><?php echo($rec['Whiteboard']) ?></p>
+        <p class="desc"><?php echo($rec['Screen']) ?></p>
+        <p class="data"><?php echo($rec['TV']) ?></p><hr>
+        
+    </div>
+    <?php
+    }
+    ?>  
 
 </body>
 </html>
