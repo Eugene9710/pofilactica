@@ -20,17 +20,20 @@
         $result = mysqli_query($conn, "SELECT `classrooms`.`NomerClass`, `Whiteboard`, `Screen`, `TV`,  `Description`, `NomerPC`, `Accessories`, `DescriptionPC` FROM `classrooms` inner join `pc` on `pc`.`NomerClass` = `classrooms`.`NomerClass` WHERE `classrooms`.`NomerClass` = $class;");   
         $rec = mysqli_fetch_assoc($result)  
   ?>
-  <div class="last-work">
-        <p class="class"><?php echo($rec['NomerClass']) ?></p>    
-        <p class="name"><?php echo($rec['Whiteboard']) ?></p>
-        <p class="desc"><?php echo($rec['Screen']) ?></p>
-        <p class="data"><?php echo($rec['TV']) ?></p><hr>
-        <p class="description"><?php echo($rec['Description']) ?></p><hr>
-        <p class="nomerPC"><?php echo($rec['NomerPC']) ?></p><hr>
-        <p class="accessories"><?php echo($rec['Accessories']) ?></p><hr>
-        <p class="descriptionPC"><?php echo($rec['DescriptionPC']) ?></p><hr>
+  <hr>
+  <div class="class_room">
+      <ul>
+        <li><?php echo($rec['NomerClass']) ?></li>    
+        <li><?php echo($rec['Whiteboard']) ?><li>
+        <li><?php echo($rec['Screen']) ?><li>
+        <li><?php echo($rec['TV']) ?><li>
+        <li><?php echo($rec['Description']) ?><li>
+        <li><?php echo($rec['NomerPC']) ?><li>
+        <li><?php echo($rec['Accessories']) ?><li>
+        <li><?php echo($rec['DescriptionPC'])?><li>
+      </ul>
   </div>
-
-  
+  <br>
+  <hr>
 </body>
 </html>
