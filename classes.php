@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>Классы:</title>
 	<?php 
         include('connect_db.php');
   ?> 
-  <link rel="stylesheet" href="styles/header_nav_style.css">
   <link rel="stylesheet" href="styles/article_style.css">
+  <link rel="stylesheet" href="styles/classes.css">
 </head>
 <body>
 	<?php 
@@ -19,7 +20,7 @@
     
     <div id="title">
       <ul>
-        <li>Номер</li>
+        <li >Номер</li>
         <li>Интерактивная доска</li> 
         <li>Эктран</li> 
         <li>Телевизор</li> 
@@ -28,21 +29,23 @@
     <br>
     <?php 
         $result = mysqli_query($conn, "SELECT `NomerClass`, `Whiteboard`,`Screen`,`TV` FROM `classrooms`;"); 
-         
+        $i = 1; 
         while($rec = mysqli_fetch_assoc($result)) {
     ?>    
     <div id="class_room">
       <a href="class.php?class=<?php echo($rec['NomerClass'])?>">
-        <div id="class_filer">
-          <p>№<?php echo($rec['NomerClass'])?></p>
-          <p><?php echo($rec['Whiteboard'])?></p>
-          <p><?php echo($rec['Screen'])?></p>
-          <p><?php echo($rec['TV'])?></p>
-        </div>
+        <!--<div id="class_filer">-->
+          <span class="nomer">№<?php echo($rec['NomerClass'])?></span>
+          <span class="board"><?php echo($rec['Whiteboard'])?></span>
+          <span class="scrin"><?php echo($rec['Screen'])?></span>
+          <span class="tv"><?php echo($rec['TV'])?></span>
+        <!--</div>-->
       </a>
+      <br>
     </div>
-    <br>
+    
     <?php
+   
     }
     ?>  
 

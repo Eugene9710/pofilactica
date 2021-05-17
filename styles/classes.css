@@ -1,0 +1,108 @@
+#title {
+	width: all;
+    height: 45px;
+    claer: both;
+    background: #A9A9A9;
+}
+
+#title ul {
+   height: 40px;
+}
+
+#title ul li {
+    float: left;
+    position: relative;
+    list-style-type: none;
+	font-weight: bold;
+	font-size: 30px;
+    line-height: 14px;
+    color: #000000;
+    display: block;
+    padding: 12px 30px 0px 40px;
+    text-decoration: none;
+}
+
+div#class_room {
+    display: table;
+    width: all;
+    height: 70px;
+}
+
+div#class_room:hover {
+    background-color: #B8B5B5;
+    color: #000000;  
+}
+
+div#class_room a {
+    
+	text-decoration: none;
+	color: #0A0A0AFF;
+    margin: auto;
+    margin-left: 
+    display: table-row;
+}
+
+div#class_room a span{
+    display: table-cell;
+    padding: 20px 28px;
+    margin: 10px 10px 10px 10px;
+
+	font-weight: bold;
+	font-size: 26px;
+    color: #000000;
+  
+}
+
+div#class_room a span.nomer {
+    color: #FF0000FF;
+    width: 150px;
+    text-align: center;
+    
+}
+div#class_room a span.board {
+    color: #ff0000ff;
+    width: 300px;
+    text-align: center;
+    
+}
+div#class_room a span.scrin {
+    color: #FF0000FF;
+    width: 120px;
+    text-align: center;
+    
+}
+div#class_room a span.tv {
+    color: #FF0000FF;
+    width: 220px;
+    text-align: center;
+    
+}
+
+
+/*
+ul.classes_room {
+	margin: 0;
+	padding: 4px;
+	
+}
+
+ul.classes_room li {
+	float: left;
+
+}
+ul.classes_room li div{
+	display:block;
+	width: 100px;
+	
+	font-size: 26px;
+	
+}
+
+
+li.nomer {
+	color: #FF0000FF;
+	
+}
+margin-right: 5px;
+width: 100px;
+	height: 1000px;

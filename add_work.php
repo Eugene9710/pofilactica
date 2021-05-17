@@ -6,7 +6,7 @@
 	<?php 
         include('connect_db.php');
     ?> 
-  <link rel="stylesheet" href="styles/header_nav_style.css">
+
   <link rel="stylesheet" href="styles/article_style.css">
   <link rel="stylesheet" href="styles/add_ctyle.css">
 </head>

@@ -1,5 +1,5 @@
 header {
-		height: 55px;
+		height: 65px;
 }
 #title-site {
 	float: right;
@@ -8,12 +8,13 @@ header {
 }
 
 #title-site p a{
-		font-size: 46px;
+		font-size: 40px;
 		color: #030000;
-		margin-top: 10px;
+		margin-top: 0px;
 		margin-left: 30px;
 		margin-bottom: 0px;
 		text-decoration: none;
+        padding: 0px;
 }
 
 nav {
@@ -24,7 +25,7 @@ nav {
 }
 
 nav ul li {
-    height: 35px;
+    height: 55px;
     float: left;
     position: relative;
     list-style-type: none;
@@ -36,12 +37,12 @@ nav ul li a {
     line-height: 14px;
     color: #000000;
     display: block;
-    padding: 14px 28px;
+    padding: 14px 30px;
     text-decoration: none;
 }
 
 nav ul li:first-child a {
-    padding-left: 29px;
+    padding-left: 25px;
 }
 
 nav ul li a:hover {
